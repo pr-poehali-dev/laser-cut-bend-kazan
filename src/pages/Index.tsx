@@ -64,7 +64,7 @@ const Index = () => {
           <div className="flex items-center gap-2">
             <Icon name="Factory" size={32} className="text-secondary" />
             <div>
-              <h1 className="text-xl font-bold text-primary">ЛазерМеталл</h1>
+              <h1 className="text-xl font-bold text-primary">КазаньЛазерМК</h1>
               <p className="text-xs text-muted-foreground">Производство с 2010 года</p>
             </div>
           </div>
@@ -292,7 +292,7 @@ const Index = () => {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Icon name="Factory" size={28} />
-                <span className="font-bold text-lg">ЛазерМеталл</span>
+                <span className="font-bold text-lg">КазаньЛазерМК</span>
               </div>
               <p className="text-white/70 text-sm">
                 Профессиональная обработка металла в Казани с 2010 года
@@ -322,7 +322,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-white/20 pt-8 text-center text-sm text-white/70">
-            <p>© 2024 ЛазерМеталл. Все права защищены.</p>
+            <p>© 2024 КазаньЛазерМК. Все права защищены.</p>
           </div>
         </div>
       </footer>
