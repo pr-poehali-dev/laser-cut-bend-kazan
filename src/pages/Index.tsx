@@ -120,15 +120,20 @@ const Index = () => {
               Полный цикл металлообработки на современном оборудовании с сертификатами качества
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, idx) => (
-              <Card key={idx} className="hover:shadow-lg transition-shadow border-2 hover:border-secondary">
-                <CardContent className="p-6">
-                  <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
-                    <Icon name={service.icon} size={24} className="text-secondary" />
+              <Card key={idx} className="group hover:shadow-2xl transition-all duration-300 border-0 bg-gradient-to-br from-white to-muted/30 hover:-translate-y-2">
+                <CardContent className="p-8">
+                  <div className="w-16 h-16 bg-gradient-to-br from-secondary to-secondary/70 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                    <Icon name={service.icon} size={28} className="text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-primary mb-3">{service.title}</h3>
-                  <p className="text-muted-foreground">{service.description}</p>
+                  <h3 className="text-2xl font-bold text-primary mb-4 group-hover:text-secondary transition-colors">{service.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+                  <div className="mt-6 pt-6 border-t border-border">
+                    <Button variant="ghost" className="text-secondary hover:text-secondary/80 p-0 h-auto font-semibold">
+                      Подробнее <Icon name="ArrowRight" size={16} className="ml-2" />
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             ))}
